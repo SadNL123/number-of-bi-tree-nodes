@@ -20,7 +20,7 @@ int findNodeNumber(node<int>* p)
 	{
 		int leftNodeNumber = findNodeNumber(p->lchild);
 		int rightNodeNumber = findNodeNumber(p->rchild);
-		return max(leftNodeNumber, rightNodeNumber) + 1;
+		return leftNodeNumber + rightNodeNumber + 1;
 }
 }
 
